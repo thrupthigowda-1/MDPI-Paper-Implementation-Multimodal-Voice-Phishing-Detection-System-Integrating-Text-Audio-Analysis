@@ -9,6 +9,13 @@ A multimodal AI system for detecting scam and vishing calls by combining:
 ✅ Risk Score Fusion
 
 Built using Python, Transformers, Scikit-Learn, PyTorch and HuggingFace.
+
+## Purpose
+
+This repository contains an implementation and evaluation of a multimodal voice-phishing detection methodology inspired by an MDPI research paper.
+
+The objective is to reproduce and analyze the paper's approach as part of a broader research study. Multiple paper implementations are being evaluated independently before selecting or hybridizing methodologies for the final internship project.
+
 ## Overview
 
 This project implements a multimodal scam-call detection pipeline inspired by recent MDPI research on voice phishing detection.
@@ -21,6 +28,22 @@ The system combines:
 - Multimodal risk-score fusion
 
 ---
+
+## Research Objective
+
+This implementation will be compared against additional voice-phishing detection methodologies. Findings from multiple implementations may later be combined into a unified hybrid architecture.
+
+## Current Status
+
+Implemented Components:
+
+- Text Classification (DistilBERT)
+- TF-IDF Baseline
+- Audio Feature Extraction (MFCC)
+- Audio Classification (Random Forest)
+- Multimodal Risk Fusion Prototype
+
+Status: Experimental Implementation
 
 #Architecture
 
@@ -91,6 +114,13 @@ jupyter notebook
 | TF-IDF + Logistic Regression | 98.8% |
 | DistilBERT | 99.2% |
 | Audio Random Forest | 92.0% |
+
+## Limitations
+
+- Audio and transcript datasets are independent.
+- Fusion uses heuristic weighting.
+- This is a reproduction-oriented implementation and not a production-ready system.
+- Further comparison with alternative methodologies is ongoing.
 
 ## Future Work
 
