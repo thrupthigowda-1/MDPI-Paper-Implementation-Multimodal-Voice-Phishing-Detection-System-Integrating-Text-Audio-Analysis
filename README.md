@@ -1,5 +1,14 @@
-# A Multimodal Voice Phishing Detection System
+# 📞 EchoGuard: Multimodal Voice Phishing Detection System
 
+A multimodal AI system for detecting scam and vishing calls by combining:
+
+✅ Text Analysis (DistilBERT)
+
+✅ Audio Emotion Analysis (MFCC + Random Forest)
+
+✅ Risk Score Fusion
+
+Built using Python, Transformers, Scikit-Learn, PyTorch and HuggingFace.
 ## Overview
 
 This project implements a multimodal scam-call detection pipeline inspired by recent MDPI research on voice phishing detection.
